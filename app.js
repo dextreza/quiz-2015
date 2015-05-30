@@ -31,7 +31,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Helpers dinamicos:
 app.use(function(req, res, next) {
-
   // si no existe lo inicializa
   if (!req.session.redir) {
     req.session.redir = '/';
